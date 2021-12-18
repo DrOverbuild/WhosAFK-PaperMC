@@ -1,0 +1,26 @@
+name: WhosAFKPaperMC
+version: '${project.version}'
+main: dev.reddin.whosafkpapermc.WhosAFKPaperMC
+api-version: 1.18
+author: Jasper Reddin
+
+commands:
+  afk:
+    description: Sets your status to AFK.
+    usage: /<command> to be AFK
+    permission: whosafk.afk
+  whosafkreload:
+    description: Reloads the WhosAFK configuration file.
+    usage: /<command>
+    permission: whosafk.reload
+
+permissions:
+  whosafk.afk:
+    description: Allows player to use /afk.
+    default: true
+  whosafk.autoafk:
+    description: Allows players to automatically go in to AFK mode.
+    default: true
+  whosafk.reload:
+    description: Allows player to reload config.
+    default: op
